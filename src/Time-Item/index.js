@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Time-item.css";
 import pauseButton from "../images/pause_button.png";
 import playButton from "../images/play_button.png";
-const TimeItem = ({ companyLogo, companyName }) => {
+const TimeItem = ({ companyLogo, companyName, info }) => {
   const [time, setTime] = useState(0);
   const [timeStarted, setTimeStarted] = useState(false);
   let actionsButtonSrcImage = playButton;
